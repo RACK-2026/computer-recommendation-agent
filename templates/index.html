@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 电脑推荐助手</title>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <link rel="stylesheet" href="/static/css/cards.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 顶部导航 -->
+        <header class="app-header">
+            <div class="header-left">
+                <span class="logo">🤖</span>
+                <h1 class="app-title">电脑推荐助手</h1>
+            </div>
+            <div class="header-right">
+                <button class="icon-btn" id="clearBtn" title="清空对话">🗑️</button>
+                <span class="version-badge">v1.0</span>
+            </div>
+        </header>
+
+        <!-- 聊天区域 -->
+        <main class="chat-area" id="chatArea">
+            <!-- 欢迎消息 -->
+            <div class="message assistant welcome-msg">
+                <div class="avatar">🤖</div>
+                <div class="bubble">
+                    <p>👋 你好！我是 <strong>电脑推荐助手</strong></p>
+                    <p>告诉我你的预算和需求，我来为你推荐合适的 <strong>笔记本</strong> 或 <strong>台式机</strong>！</p>
+                    <div class="welcome-tips">
+                        <p>💡 你可以这样问我：</p>
+                        <ul>
+                            <li>"推荐 <strong>5000元</strong> 左右的 <strong>学生笔记本</strong>"</li>
+                            <li>"适合 <strong>编程</strong> 的 <strong>笔记本</strong>"</li>
+                            <li>"<strong>游戏台式机</strong> 推荐"</li>
+                            <li>"<strong>商务办公</strong> 用什么电脑好"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 快捷按钮 -->
+        <div class="quick-bar" id="quickBar">
+            <button class="quick-btn" data-msg="推荐适合学生的笔记本">🎓 学生</button>
+            <button class="quick-btn" data-msg="推荐游戏本">🎮 游戏</button>
+            <button class="quick-btn" data-msg="推荐商务办公笔记本">💼 办公</button>
+            <button class="quick-btn" data-msg="推荐适合编程的笔记本">💻 编程</button>
+            <button class="quick-btn" data-msg="5000元左右笔记本推荐">💰 5000元</button>
+            <button class="quick-btn" data-msg="7000-10000元笔记本推荐">🏷️ 7000+</button>
+        </div>
+
+        <!-- 输入区域 -->
+        <footer class="input-area">
+            <div class="input-wrapper">
+                <input type="text" id="messageInput" class="message-input"
+                       placeholder="输入你的需求，例如：推荐适合编程的笔记本..." autofocus>
+                <button class="send-btn" id="sendBtn">发送</button>
+            </div>
+            <p class="input-hint">按 Enter 发送 · 数据来源于网络搜索，仅供参考</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/utils.js"></script>
+    <script src="/static/js/chat.js"></script>
+    <script src="/static/js/charts.js"></script>
+    <script src="/static/js/cards.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
+
