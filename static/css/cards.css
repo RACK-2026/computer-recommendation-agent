@@ -1,0 +1,31 @@
+/* ===== 产品卡片 (独立样式补充) ===== */
+.extra-cards { margin: 12px 0; }
+
+.card-source-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.card-source-link:hover { text-decoration: underline; }
+
+/* 卡片展开收起 */
+.card-toggle {
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--primary);
+  border: none;
+  background: none;
+  padding: 4px 0;
+}
+
+.card-extended {
+  padding: 8px 14px 12px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
